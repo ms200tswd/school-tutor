@@ -9,14 +9,14 @@ export default function InteractiveAnimation() {
   // 器官数据配置
   const organs = {
     stomach: {
-      name: '胃',
-      description: '胃是消化系统的重要器官，通过分泌胃酸和胃蛋白酶分解食物，平均容量约为1.5升。胃壁肌肉的蠕动帮助食物与消化液混合形成食糜。',
+      name: 'Stomach',
+      description: 'The stomach secretes gastric acids and pepsin to break down food. Average capacity is approximately 1.5 liters. Peristalsis mixes food with digestive juices to form chyme.',
       position: { top: '52%', left: '38%' },
       color: 'bg-red-100'
     },
     intestine: {
-      name: '小肠',
-      description: '小肠全长约6米，分为十二指肠、空肠和回肠三部分。通过肠液和胰液完成营养物质的最终分解，绒毛结构大大增加吸收面积。',
+      name: 'Small Intestine',
+      description: 'Approximately 6 meters long, consisting of duodenum, jejunum, and ileum. Final nutrient absorption occurs through intestinal villi that dramatically increase surface area.',
       position: { top: '62%', left: '45%' },
       color: 'bg-yellow-100'
     }
@@ -45,7 +45,7 @@ export default function InteractiveAnimation() {
           src="/images/eating-animation.gif"
           width={320}
           height={240}
-          alt="消化过程动态演示"
+          alt="Digestive process animation"
           className="rounded-lg border"
           unoptimized
         />
@@ -97,7 +97,7 @@ export default function InteractiveAnimation() {
                     whileTap={{ scale: 0.95 }}
                     onClick={() => setActiveOrgan(null)}
                   >
-                    关闭说明
+                    Close
                   </motion.button>
                 </div>
               </div>
@@ -110,11 +110,11 @@ export default function InteractiveAnimation() {
       <div className="absolute top-[45%] right-4 text-sm text-gray-600">
         <div className="flex items-center gap-2 mb-3">
           <div className="w-3 h-3 bg-red-400 rounded-full" />
-          <span>动脉血管</span>
+          <span>Arteries</span>
         </div>
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 bg-blue-400 rounded-full" />
-          <span>静脉血管</span>
+          <span>Veins</span>
         </div>
       </div>
     </div>

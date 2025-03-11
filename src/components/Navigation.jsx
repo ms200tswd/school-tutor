@@ -6,14 +6,14 @@ export default function Navigation() {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center gap-6">
           <Link href="/" className="text-xl font-bold text-blue-600">
-            生物学习系统
+            Biology Learning System
           </Link>
-          <div >
+          <div className="flex gap-4">
             <Link href="/anatomy" className="px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors">
-                消化系统
+                Anatomy
             </Link>
             <Link href="/biology" className="px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors">
-              生物学
+                Biology
             </Link>
           </div>
         </div>
