@@ -1,0 +1,9 @@
+{
+    "organs": {
+      "stomach": {
+        "name": "胃",
+        "description": "胃包含三个主要结构...",
+        "position": { "top": "55%", "left": "38%" }
+      }
+    }
+  }
