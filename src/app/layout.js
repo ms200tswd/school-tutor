@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 import { Inter } from 'next/font/google';
 import "./globals.css";
 
@@ -24,14 +25,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inter.className}>
-      <body>
+    <html lang="en" className="scroll-smooth">
+      <body className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-blue-50">
         {/* 导航组件 */}
         <Navigation /> 
         {/* 添加导航到全局布局 */}
         <main className="container mx-auto p-4">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
